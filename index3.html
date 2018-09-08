@@ -11,6 +11,7 @@
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/fonts.css" rel="stylesheet">
 	<link href="color/default.css" rel="stylesheet">
+	<link href="css/modal.css" rel="stylesheet">
 	<link rel="shortcut icon" href="img/favicon.ico">
 
 	<!-- =======================================================
@@ -20,13 +21,18 @@
     Author URL: https://bootstrapmade.com
 	======================================================= -->
 </head>
-<!-- <script type="text/javascript">
 
-if (screen.width <= 699) {
-document.location = "mobile.html";
-}
+<script type="text/javascript">
+  <!--
+  if (screen.width < 500) {
+    window.location.replace("http://13.125.210.214/mobile.html");
+  }else if(screen.width < 1200){
+	window.location.replace("http://13.125.210.214/tablet.html");
+  }
+  //-->
+</script>
 
-</script> -->
+
 <style>
 .main-color{
 	background-color:#2699fb;
@@ -70,11 +76,11 @@ document.location = "mobile.html";
 	background:#fff !important;
 	color:#2b2b2b !important;
 	border:2px solid #2b2b2b !important;
-	margin-top:60px !important;
+	margin-left:30px !important;
 }
 .wave{
 /*  background-color: skyblue;*/
-/*  margin-top: 50px;*/
+  margin-top: -19px;
   padding: 5% 20px; /* Added a percentage value for top/bottom padding to keep the wrapper inside of the parent */
   
   -webkit-transform: skewY(-5deg);
@@ -104,8 +110,10 @@ document.location = "mobile.html";
     justify-content: center;
     align-items: center;
 }
-.mt-6{
-	margin-top:60px;
+.ver_center_outer{
+	position: relative;
+	top: 35%;
+	transform: translateY(-50%);
 }
 </style>
 <body>
@@ -113,96 +121,143 @@ document.location = "mobile.html";
 	<div class="navbar-wrapper">
 		<div class="navbar navbar-fixed-top">
 			<div class="navbar-docker"><!--  navbar-inner  -->
-				<div class="container ho_center_outer">
-					
+				<div class="container">
 					<div class="square">
-						<img src="./img/docker9.png" />
+						<img id="myImg" src="./img/docker9.png" />
 					</div>
 					<h1 class="brand">
 
 					<a href="index.html" class="sub-color--text">DOCKER Lego</a>
 					</h1>
+					<!-- navigation -->
+					<!-- <nav class="pull-right nav-collapse collapse">
+						<ul id="menu-main" class="nav">
+							<li><a title="team" href="#about">About</a></li>
+							<li><a title="services" href="#services">Services</a></li>
+							<li><a title="works" href="#works">Works</a></li>
+							<li><a title="blog" href="#blog">Blog</a></li>
+							<li><a title="contact" href="#contact">Contact</a></li>
+							<li><a href="page.html">Page</a></li>
+						</ul>
+					</nav> -->
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- Header area -->
-	<div id="header-wrapper" class="header-slider" style="margin-top:0px !important; height:auto;">
-		<header class="clearfix">
+	<div id="header-wrapper" class="header-slider" style="margin-top:none !important;">
+		<header class="clearfix ver_center_outer">
 			<!-- <div class="logo">
 				<img src="img/logo-image.png" alt="" />
 			</div> -->
 			<div class="container">
 				<div class="row">
-					<div class="span12 aligncenter animated tada">
-						<div class="service-box">
-							<img src="./img/docker/Moby_Dock_transparent.png" >
-						</div>
+					<div class="span7 alignleft">
+					<div id="main-flexslider" class="flexslider" style="height:16rem;">
+						<ul class="slides">
+							<li>
+								<p class="home-slide-content sub-color--text" style="border-bottom:5px solid #2b2b2b;">
+									<strong class="">Docker</strong>
+								</p>
+								<p class="home-slide-content sub-color--text animated fadeInUpBig">
+								 on your Hand
+								</p>
+
+							</li>
+							<!-- <li>
+								<p class="home-slide-content sub-color--text">
+									Eat and drink <strong>Docker</strong>
+								</p>
+							</li>
+							<li>
+								<p class="home-slide-content sub-color--text">
+									We love <strong>Docker Lego</strong>
+								</p>
+							</li> -->
+						</ul>
 					</div>
-					<div class="span12">
-						<div class="landbtn_container ho_center_outer">
-							<a href="#services"><input type="submit" value="설명서 보기" class="btn btn-theme pull-left landbtn_right"></a>
-						</div>
+					<div class="landbtn_container">
+						<a href="https://www.instagram.com/docker_lego"><input type="submit" value="See more" class="btn btn-theme pull-left landbtn_left"></a>
+						<a href="guide"><input type="submit" value="Instructions" class="btn btn-theme pull-left landbtn_right"></a>
 					</div>
-					
+					</div>
+					<div class="span5 aligncenter animated tada">
+						<!-- <i class="icon-coffee icon-10x"></i> -->
+
+							<div class="service-box">
+								<img src="./img/docker/Moby_Dock_transparent.png" >
+								<!-- <h2 class="docekr_desc">made by Docker Lego</h2> -->
+<!-- 								<p style="color:#2b2b2b;">
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+								</p> -->
+							</div>
+				
+
+					</div>
 				</div>
 			</div>
 		</header>
 	</div>
 
-	<section id="services" class="section main-color mt-6">
+	<section id="services" class="section main-color wave">
 		<div class="container">
 			<h4 class="white-color--text">Docker Lego</h4>
 			<!-- Four columns -->
 			<div class="row">
 				<div class="span3 animated-fast flyIn">
 					<div class="service-box">
-						<img src="img/docker/1536147744099.jpg" alt="" />
-						<h2>Web design</h2>
+						<img id="myImg" src="img/docker/1536147744099.jpg" alt="" />
+						<h2>It is cute</h2>
 						<p>
-							Lorem Ipsum is simply d.
+						    Always, anywhere, with anyone.
 						</p>
 					</div>
 				</div>
 				<div class="span3 animated flyIn">
 					<div class="service-box">
-						<img src="img/docker/1536147741223.jpg" alt="" />
-						<h2>Web development</h2>
+						<img id="myImg" src="img/docker/1536147741223.jpg" alt="" />
+						<h2>It is adorable</h2>
 						<p>
-							Lorem Ipsum is simply d.
+						    Who can ever deny.
 						</p>
 					</div>
 				</div>
 				<div class="span3 animated-fast flyIn">
 					<div class="service-box">
-						<img src="img/docker/1536147707572.jpg" alt="" />
-						<h2>Photography</h2>
+						<img id="myImg" src="img/docker/1536147707572.jpg" alt="" />
+						<h2>It is awesome</h2>
 						<p>
-							Lorem Ipsum is simply d.
+						    Make your place cool.
 						</p>
 					</div>
 				</div>
 				<div class="span3 animated-slow flyIn">
 					<div class="service-box">
-						<img src="img/docker/1536147731344.jpg" alt="" />
-						<h2>Ecommerce</h2>
+						<img id="myImg" src="img/docker/1536147731344.jpg" alt="" />
+						<h2>It is for you</h2>
 						<p>
-							Lorem Ipsum is simply d.
+						    Docker is waiting for you.
 						</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+	  <span class="close">&times;</span>
+	  <img class="modal-content" id="img01">
+	  <div id="caption"></div>
+	</div>
 	<!-- end section: services -->
 	
 	
 	<!-- section: contact -->
-	<section id="contact" class="section" style="background:#fff; margin-top:-60px;">
+	<section id="contact" class="section" style="background:#fff; margin-top:-79px;">
 		<div class="container">
-			<h4>Get Awesome Docker Lego</h4>
+			<h4>Get your own Docker</h4>
 			<p>
-				Reque facer nostro et ius, cu persius mnesarchum disputando eam, clita prompta et mel vidisse phaedrum pri et. 
+			    It is awesome to have a lovely docker lego. Send us a message and have your own docker!
 			</p>
 			<div class="blankdivider30">
 			</div>
@@ -220,27 +275,27 @@ document.location = "mobile.html";
 										<div class="validation"></div>
 									</div>
 									<div class="field your-email form-group">
-										<input type="text" class="form-control" name="email" id="email" placeholder="전화 번호" data-rule="email" data-msg="Please enter a valid email" />
+										<input type="text" class="form-control" name="phone" id="phone" placeholder="전화 번호" data-rule="email" data-msg="Please enter a valid email" />
 										<div class="validation"></div>
 									</div>
 									<div class="field subject form-group">
-										<input type="text" class="form-control" name="subject" id="subject" placeholder="주소" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+										<input type="text" class="form-control" name="address" id="address" placeholder="주소" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
 										<div class="validation"></div>
 									</div>
 								</div>
 								<div class="span6">
 									<div class="field your-name form-group">
-										<input type="text" name="name" class="form-control" id="name" placeholder="수량" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+										<input type="text" name="qty" class="form-control" id="qty" placeholder="수량" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
 										<div class="validation"></div>
 									</div>
 									<div class="field message form-group">
-										<textarea class="form-control" name="메세지" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="메세지"></textarea>
+										<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="메세지"></textarea>
 										<div class="validation"></div>
 									</div>
 								</div>
 							
 								<div class="span12 ho_center_outer">
-								<input type="submit" value="메세지 보내기" class="btn btn-theme pull-left sub-color">		
+								<input type="submit" value="Send Message" class="btn btn-theme pull-left sub-color">		
 								</div>
 							</div>
 						</form>
@@ -254,14 +309,16 @@ document.location = "mobile.html";
 		<div class="container">
 			<div class="row ho_center_outer">
 				<div class="span6">
-					<ul class="social-networks">
+					<!--
+                                        <ul class="social-networks">
 						<li><a target="_blank" href="https://www.instagram.com/docker_lego"><i class="icon-circled icon-bgdark icon-instagram icon-2x"></i></a></li>
 						<li><a href="#"><i class="icon-circled icon-bgdark icon-twitter icon-2x"></i></a></li>
 						<li><a href="#"><i class="icon-circled icon-bgdark icon-dribbble icon-2x"></i></a></li>
 						<li><a href="#"><i class="icon-circled icon-bgdark icon-pinterest icon-2x"></i></a></li>
 					</ul>
+                                        -->
 					<p class="copyright">
-						&copy; Maxim Theme. All rights reserved.
+						&copy; Docker Lego. All rights reserved.
 						<div class="credits">
 							<!--
                 All the links in the footer should remain intact.
@@ -269,7 +326,7 @@ document.location = "mobile.html";
                 Licensing information: https://bootstrapmade.com/license/
                 Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Maxim
               -->
-							Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+							Designed by <a href="http://minyelee.github.io">Minyelee</a>
 						</div>
 					</p>
 				</div>
@@ -289,8 +346,9 @@ document.location = "mobile.html";
 	<script src="js/inview.js"></script>
 	<script src="js/animate.js"></script>
 	<script src="js/custom.js"></script>
+	<script src="js/modal.js"></script>
 	<script src="contactform/contactform.js"></script>
-
+	
 </body>
 
 </html>

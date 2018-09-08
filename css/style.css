@@ -221,8 +221,9 @@ h6 {
 	margin-bottom:10px;
 }
 strong {
-	font-weight:700;
-	font-family: 'Open Sans', sans-serif;
+	font-weight:600;
+	/* font-family: 'Open Sans', sans-serif; */
+        font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 small {
 	font-size: 0.75em; /* 12px */
@@ -342,10 +343,10 @@ ul#menu-main > li > a:focus {
 
 #header-wrapper {
 	width: 100%;
-	min-height: 560px;
 	margin-top: -60px;
 	padding-top:160px;
 	text-align:center;
+	height:-webkit-fill-available;
 }
 
 
@@ -949,6 +950,7 @@ section#about {
 
 #contact-form input[type=text]:focus, .contactForm textarea:focus {
 	background: #fff;
+	border:2px solid #2b2b2b;
 	color: #555;
 	box-shadow: none;
 	-moz-box-shadow: none;
@@ -966,7 +968,7 @@ section#about {
 	width: 185px;
 	height: 60px;
 	text-shadow: none;
-	font-size: 16px;
+	font-size: 1.3125em;
 	padding:0.5em;
 	letter-spacing: 0.05em;
 	margin: 0 0 20px 0;
