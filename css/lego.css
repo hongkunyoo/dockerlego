@@ -1,0 +1,190 @@
+.lego {
+	width:100px;
+	height:100px;
+	position:absolute;
+	transform:rotate(45deg);
+}
+
+.dot {
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	position:absolute;
+	transform:rotate(-45deg);
+}
+
+.dot:after {
+	content:"";
+	position:absolute;
+	left:0;
+	top:-7px;
+	width:30px;
+	height:30px;
+	border-radius:50%;
+}
+
+.dot:nth-child(1) {
+	top:15px;
+	left:15px;
+}
+
+.dot:nth-child(2) {
+	bottom:15px;
+	left:15px;
+}
+
+.dot:nth-child(3) {
+	top:15px;
+	right:15px;
+}
+
+.dot:nth-child(4) {
+	bottom:15px;
+	right:15px;
+}
+
+.lego:before {
+	content:"";
+	position:absolute;
+	top:100%;
+	left:15px;
+	height:30px;
+	width:100%;
+	transform:skewX(45deg);
+}
+
+.lego:after {
+	content:"";
+	position:absolute;
+	left:100%;
+	top:15px;
+	height:100%;
+	width:30px;
+	transform:skewY(45deg);
+}
+
+#lego-one {
+	top:300px;
+	left:200px;
+	z-index:100;
+	background:#F7F7F7;
+}
+
+
+#lego-one:before {
+	background:#d0d1d0;
+}
+
+#lego-one:after {
+	background:#999a9c;
+}
+
+#lego-one .dot {
+	background:#999a9c;
+}
+
+#lego-one .dot:after {
+	background:#F7F7F7;
+}
+
+#lego-two {
+	top:230px;
+	left:270px;
+	z-index:90;
+	background:#6d686a;
+}
+
+#lego-two:before {
+	background:#4a484c;
+}
+
+#lego-two:after {
+	background:#2f2d30;
+}
+
+#lego-two .dot {
+	background:#2f2d30;
+}
+
+#lego-two .dot:after {
+	background:#6d686a;
+}
+
+#lego-three {
+	top:160px;
+	left:340px;
+	z-index:80;
+	background:#F7F7F7;
+}
+
+#lego-three:before {
+	background:#d0d1d0;
+}
+
+#lego-three:after {
+	background:#999a9c;
+}
+
+#lego-three .dot {
+	background:#999a9c;
+}
+
+#lego-three .dot:after {
+	background:#F7F7F7;
+}
+
+#lego-four {
+	top:160px;
+	left:200px;
+	z-index:70;
+	background:#6d686a;
+}
+
+#lego-four:before {
+	background:#4a484c;
+}
+
+#lego-four:after {
+	background:#2f2d30;
+}
+
+#lego-four .dot {
+	background:#2f2d30;
+}
+
+#lego-four .dot:after {
+	background:#6d686a;
+}
+
+#lego-five {
+	top:90px;
+	left:270px;
+	z-index:60;
+	background:#245fdd;
+}
+
+#lego-five:before {
+	background:#12397e;
+}
+
+#lego-five:after {
+	background:#103776;
+}
+
+#lego-five .dot {
+	background:#103776;
+}
+
+#lego-five .dot:after {
+	background:#245fdd;
+}
+
+	
+
+.lego_container {
+	/*Some arbitrary nonesense to kinda center it*/
+	margin-top: -60%;
+    right: 15%;
+    width: 100%;
+    height: 450px;
+}
