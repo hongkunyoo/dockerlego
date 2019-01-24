@@ -562,9 +562,34 @@
   .span7 {
     width: 414px;
   }
-  .span6 {
+/*  .span6 {
     width: 352px;
+  }*/
+  /*  Mobile Responsive */
+  .span6{
+    width: 724px;
   }
+  .span6 .dockerImg{
+    width: 414px;
+    margin-bottom: 40px;
+  }
+  .span6 .line_below{
+    border-bottom:none !important;
+  }
+  .span6 .slides{
+/*    width: 414px;
+    text-align:center !important;*/
+  }
+  .lego_container{
+    display:none;
+  }
+  #main-flexslider ul.slides li p{
+    text-align: center !important;
+  }
+  .navbar .brand{
+/*    margin-left:34% !important;*/
+  }
+  /*  Mobile Responsive */
   .span5 {
     width: 290px;
   }
@@ -956,6 +981,29 @@
   .modal.fade.in {
     top: 20px;
   }
+  .span6{
+    width: 724px;
+  }
+  .span6 .dockerImg{
+    width: 414px;
+    margin-bottom: 40px;
+  }
+  .span6 .line_below{
+    border-bottom:none !important;
+  }
+  .span6 .slides{
+/*    width: 414px;
+    text-align:center !important;*/
+  }
+  .lego_container{
+    display:none;
+  }
+  #main-flexslider ul.slides li p{
+    text-align: center !important;
+  }
+  .navbar .brand{
+/*    margin-left:34% !important;*/
+  }
 }
 
 @media (max-width: 480px) {
@@ -1007,6 +1055,30 @@
   }
   .carousel-caption {
     position: static;
+  }
+  .span6{
+    width: 100%;
+  }
+  .span6 .dockerImg{
+    width: 340px;
+    margin-bottom: 40px;
+  }
+  .span6 .line_below{
+    border-bottom:none !important;
+  }
+  .span6 .slides{
+/*    width: 414px;
+    text-align:center !important;*/
+  }
+  .lego_container{
+    display:none;
+  }
+  #main-flexslider ul.slides li p{
+    text-align: center !important;
+  }
+  .navbar .brand{
+    padding: 0 14% !important;
+    margin-bottom: 50px !important;
   }
 }
 

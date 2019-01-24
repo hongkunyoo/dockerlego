@@ -1,0 +1,59 @@
+.instagram_sarah {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 220px;
+  line-height: 250px;
+  vertical-align: middle;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+.line_below{
+	border-bottom:3px solid #2b2b2b;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+	#blue_love{
+		display:none;
+	}
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	#blue_love{
+		display:none;
+	}
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	#blue_love{
+		display:none;
+	}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	#blue_love{
+		display:none;
+	}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1025px) {
+	#blue_love{
+		display:block;
+	}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	#blue_love{
+		display:block;
+	}
+}
