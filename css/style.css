@@ -86,6 +86,7 @@ body {
 a.scrollup {
 	outline:0;
 	text-decoration:none;
+	z-index:100000;
 }
 
 a.scrollup:hover,a.scrollup:active,a.scrollup:focus {
